@@ -17,5 +17,10 @@
       packages = forAllSystems (system: import ./default.nix {
         pkgs = import nixpkgs { inherit system; };
       });
+      overlay = final: prev: {
+        lykos153 = import ./default.nix {
+          pkgs = prev;
+        };
+      };
     };
 }
