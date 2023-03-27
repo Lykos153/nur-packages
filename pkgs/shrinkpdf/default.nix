@@ -32,7 +32,7 @@ stdenv.mkDerivation rec {
       images to 72dpi.  The result should be (but not always is) a much smaller
       file.
     '';
-    homepage = http://www.alfredklomp.com/programming/shrinkpdf/;
+    homepage = https://github.com/aklomp/shrinkpdf;
     license = licenses.bsd3;
     platforms = platforms.all;
     maintainers = with maintainers; [ lykos153 ];
