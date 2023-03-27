@@ -1,15 +1,40 @@
-{ writeShellApplication, fetchFromGitHub, lib, pkgs }:
+{ stdenv, fetchFromGitHub, lib, pkgs }:
 
-writeShellApplication rec {
+
+stdenv.mkDerivation rec {
   name = "shrinkpdf";
-
-  runtimeInputs = [ pkgs.ghostscript ];
-
-  text = builtins.readFile (fetchFromGitHub 
+  version = "1.1";
+  src = fetchFromGitHub
   {
     owner = "aklomp";
     repo = name;
-    rev = "v1.1";
+    rev = "v${version}";
     hash = "sha256-SGsJW/meVs2MxywbqcgylvsKGuFck1x1vxb1gyXnJAk=";
-  } + "/shrinkpdf.sh");
+  } + "/shrinkpdf.sh";
+
+  preferLocalBuild = true;
+
+  unpackPhase = "true";
+
+  installPhase = ''
+    install -Dm755 $src $out/bin/shrinkpdf
+    substituteInPlace $out/bin/shrinkpdf \
+      --replace gs ${pkgs.ghostscript}/bin/gs
+  '';
+
+  meta = with lib; {
+    description = "shrink PDF files with Ghostscript";
+    longDescription = ''
+      A simple wrapper around Ghostscript to shrink PDFs (as in reduce
+      filesize) under Linux. Inspired by some code I found in an OpenOffice
+      Python script (I think). The script feeds a PDF through Ghostscript,
+      which performs lossy recompression by such methods as downsampling the
+      images to 72dpi.  The result should be (but not always is) a much smaller
+      file.
+    '';
+    homepage = http://www.alfredklomp.com/programming/shrinkpdf/;
+    license = licenses.bsd3;
+    platforms = platforms.all;
+    maintainers = with maintainers; [ lykos153 ];
+  };
 }
