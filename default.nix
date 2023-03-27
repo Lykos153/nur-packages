@@ -16,4 +16,5 @@
 
   shrinkpdf = pkgs.callPackage ./pkgs/shrinkpdf { };
   iamb = pkgs.callPackage ./pkgs/iamb { };
+  mum = pkgs.callPackage ./pkgs/mum { };
 }
