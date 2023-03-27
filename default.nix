@@ -15,4 +15,5 @@
   overlays = import ./overlays; # nixpkgs overlays
 
   shrinkpdf = pkgs.callPackage ./pkgs/shrinkpdf { };
+  iamb = pkgs.callPackage ./pkgs/iamb { };
 }
