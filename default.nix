@@ -17,4 +17,8 @@
   shrinkpdf = pkgs.callPackage ./pkgs/shrinkpdf { };
   iamb = pkgs.callPackage ./pkgs/iamb { };
   mum = pkgs.callPackage ./pkgs/mum { };
+
+  python3Packages = pkgs.recurseIntoAttrs (
+    pkgs.python3Packages.callPackage ./pkgs/python-pkgs {}
+  );
 }
