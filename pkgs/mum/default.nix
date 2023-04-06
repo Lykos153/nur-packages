@@ -29,6 +29,5 @@ rustPlatform.buildRustPackage rec {
     description = "Daemon/cli mumble client";
     homepage = "https://github.com/mum-rs/mum";
     license = licenses.mit;
-    maintainers = with maintainers; [ lykos153 ];
   };
 }

@@ -15,6 +15,5 @@ rustPlatform.buildRustPackage rec {
     description = " A Matrix client for Vim addicts";
     homepage = "https://github.com/ulyssa/iamb";
     license = licenses.asl20;
-    maintainers = with maintainers; [ lykos153 ];
   };
 }

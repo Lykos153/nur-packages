@@ -35,6 +35,5 @@ stdenv.mkDerivation rec {
     homepage = https://github.com/aklomp/shrinkpdf;
     license = licenses.bsd3;
     platforms = platforms.all;
-    maintainers = with maintainers; [ lykos153 ];
   };
 }
