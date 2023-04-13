@@ -17,6 +17,7 @@
   shrinkpdf = pkgs.callPackage ./pkgs/shrinkpdf { };
   iamb = pkgs.callPackage ./pkgs/iamb { };
   mum = pkgs.callPackage ./pkgs/mum { };
+  git-remote-ipld = pkgs.callPackage ./pkgs/git-remote-ipld { };
 
   python3Packages = pkgs.recurseIntoAttrs (
     pkgs.python3Packages.callPackage ./pkgs/python-pkgs {}
