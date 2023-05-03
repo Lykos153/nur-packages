@@ -17,6 +17,7 @@
   dotool = pkgs.callPackage ./pkgs/dotool { };
   iamb = pkgs.callPackage ./pkgs/iamb { };
   mum = pkgs.callPackage ./pkgs/mum { };
+  polybar-pulseaudio-control = pkgs.callPackage ./pkgs/polybar-pulseaudio-control { };
 
   python3Packages = pkgs.recurseIntoAttrs (
     pkgs.python3Packages.callPackage ./pkgs/python-pkgs {}
