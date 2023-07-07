@@ -23,4 +23,5 @@
   );
 
   shrinkpdf = pkgs.callPackage ./pkgs/shrinkpdf { };
+  git-rstash = pkgs.callPackage ./pkgs/git-rstash { };
 }
