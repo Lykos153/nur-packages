@@ -30,4 +30,5 @@
 
   cntb-bin = pkgs.callPackage ./pkgs/cntb-bin { };
   coord = pkgs.callPackage ./pkgs/coord { };
+  ruqola = pkgs.callPackage ./pkgs/ruqola { };
 }
