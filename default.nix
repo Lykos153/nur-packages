@@ -21,14 +21,18 @@
   python3Packages = pkgs.recurseIntoAttrs (
     pkgs.python3Packages.callPackage ./pkgs/python-pkgs {}
   );
+  yaookctl = pkgs.python3Packages.callPackage ./pkgs/yaookctl {};
 
   shrinkpdf = pkgs.callPackage ./pkgs/shrinkpdf { };
   git-rstash = pkgs.callPackage ./pkgs/git-rstash { };
   cb = pkgs.callPackage ./pkgs/cb { };
   toki = pkgs.callPackage ./pkgs/toki { };
+  task-timewarrior-hook = pkgs.callPackage ./pkgs/task-timewarrior-hook{ };
   garden = pkgs.callPackage ./pkgs/garden { };
 
+
   cntb-bin = pkgs.callPackage ./pkgs/cntb-bin { };
+  rofi-blocks = pkgs.callPackage ./pkgs/rofi-blocks { };
   coord = pkgs.callPackage ./pkgs/coord { };
   ruqola = pkgs.callPackage ./pkgs/ruqola { };
 }
