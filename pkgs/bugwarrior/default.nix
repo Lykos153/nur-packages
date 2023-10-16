@@ -1,18 +1,21 @@
 { lib
 , python3Packages
+, fetchFromGitHub
 }:
 with python3Packages;
 
 buildPythonApplication rec {
   pname = "bugwarrior";
-  version = "1.8.0";
+  version = "15ac6a2197f490db3cf9b5a4a934b5a41804ce76";
 
-  src = fetchPypi {
-    inherit pname version;
-    hash = "sha256-8CTCnSCJuCbwVIHKzjOmKqmE8z6Y0ib25BiX5vEbP1E=";
+  src = fetchFromGitHub {
+    owner = "ralphbean";
+    repo = pname;
+    rev = "${version}";
+    hash = "sha256-pKyPnjazSQoy12IQP+Av2Qod0bCMLep2YG2cVC4Oh6s=";
   };
 
-  propagatedBuildInputs = [ dateutil lockfile dogpile-cache jinja2 pytz requests click taskw future responses];
+  propagatedBuildInputs = [ dateutil lockfile dogpile-cache jinja2 pytz requests click taskw future responses typing-extensions pydantic tomli];
   doCheck = false; # needs network connection
 
   meta = with lib; {
