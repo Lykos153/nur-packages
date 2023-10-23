@@ -15,7 +15,7 @@ buildPythonApplication rec {
     hash = "sha256-pKyPnjazSQoy12IQP+Av2Qod0bCMLep2YG2cVC4Oh6s=";
   };
 
-  propagatedBuildInputs = [ dateutil lockfile dogpile-cache jinja2 pytz requests click taskw future responses typing-extensions pydantic email-validator tomli pygobject3 notify2];
+  propagatedBuildInputs = [ dateutil lockfile dogpile-cache jinja2 pytz requests click taskw future responses typing-extensions pydantic email-validator tomli pkgs.gnugrep];
   doCheck = false; # needs network connection
 
   meta = with lib; {
