@@ -30,6 +30,7 @@
   task-timewarrior-hook = pkgs.callPackage ./pkgs/task-timewarrior-hook{ };
   garden = pkgs.callPackage ./pkgs/garden { };
   bugwarrior = pkgs.callPackage ./pkgs/bugwarrior { };
+  acloud-dl = pkgs.callPackage ./pkgs/acloud-dl { };
 
 
   cntb-bin = pkgs.callPackage ./pkgs/cntb-bin { };
