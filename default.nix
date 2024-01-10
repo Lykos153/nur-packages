@@ -18,6 +18,7 @@
   iamb = pkgs.callPackage ./pkgs/iamb { };
   mum = pkgs.callPackage ./pkgs/mum { };
   dotool = pkgs.callPackage ./pkgs/dotool { };
+  contabo-cli = pkgs.callPackage ./pkgs/contabo-cli { };
 
   python3Packages = pkgs.recurseIntoAttrs (
     pkgs.python3Packages.callPackage ./pkgs/python-pkgs {}
