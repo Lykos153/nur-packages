@@ -16,6 +16,7 @@
 
   dotool = pkgs.callPackage ./pkgs/dotool { };
   mum = pkgs.callPackage ./pkgs/mum { };
+  keyboard_layout_optimizer = pkgs.callPackage ./pkgs/keyboard_layout_optimizer { };
   polybar-pulseaudio-control = pkgs.callPackage ./pkgs/polybar-pulseaudio-control { };
 
   python3Packages = pkgs.recurseIntoAttrs (
