@@ -25,6 +25,7 @@
   yaookctl = pkgs.python3Packages.callPackage ./pkgs/yaookctl {};
 
   shrinkpdf = pkgs.callPackage ./pkgs/shrinkpdf { };
+  list-iommu-groups = pkgs.callPackage ./pkgs/list-iommu-groups { };
   git-rstash = pkgs.callPackage ./pkgs/git-rstash { };
   cb = pkgs.callPackage ./pkgs/cb { };
   toki = pkgs.callPackage ./pkgs/toki { };
