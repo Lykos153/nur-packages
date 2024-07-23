@@ -1,8 +1,8 @@
 { lib
-, python3Packages
+, python311Packages
 , fetchFromGitHub
 }:
-with python3Packages;
+with python311Packages;
 
 buildPythonApplication rec {
   pname = "bugwarrior";
