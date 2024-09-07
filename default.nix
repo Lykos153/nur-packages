@@ -32,6 +32,7 @@
   task-timewarrior-hook = pkgs.callPackage ./pkgs/task-timewarrior-hook{ };
   garden = pkgs.callPackage ./pkgs/garden { };
   bugwarrior = pkgs.callPackage ./pkgs/bugwarrior { };
+  desec-dns = pkgs.callPackage ./pkgs/desec-dns { };
   acloud-dl = pkgs.callPackage ./pkgs/acloud-dl { };
 
 
