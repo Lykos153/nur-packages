@@ -30,6 +30,6 @@ with python312Packages;
     meta = with lib; {
       description = " A simple deSEC.io API client";
       homepage = "https://github.com/s-hamann/desec-dns";
-      license = licenses.gpl3;
+      license = licenses.mit;
     };
   }
