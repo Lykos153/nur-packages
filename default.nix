@@ -35,6 +35,7 @@
   bugwarrior = pkgs.callPackage ./pkgs/bugwarrior { };
   desec-dns = pkgs.callPackage ./pkgs/desec-dns { };
   acloud-dl = pkgs.callPackage ./pkgs/acloud-dl { };
+  keycloak-magic-link = pkgs.callPackage ./pkgs/keycloak-magic-link {};
 
 
   cntb-bin = pkgs.callPackage ./pkgs/cntb-bin { };
