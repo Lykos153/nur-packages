@@ -11,7 +11,6 @@
   modules = import ./modules; # NixOS modules
   overlays = import ./overlays; # nixpkgs overlays
 
-  dotool = pkgs.callPackage ./pkgs/dotool {};
   mum = pkgs.callPackage ./pkgs/mum {};
   keyboard_layout_optimizer = pkgs.callPackage ./pkgs/keyboard_layout_optimizer {};
   polybar-pulseaudio-control = pkgs.callPackage ./pkgs/polybar-pulseaudio-control {};
