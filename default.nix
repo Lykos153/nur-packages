@@ -30,7 +30,6 @@
   garden = pkgs.callPackage ./pkgs/garden {};
   openstack-rs = pkgs.callPackage ./pkgs/openstack-rs {};
   bugwarrior = pkgs.callPackage ./pkgs/bugwarrior {};
-  desec-dns = pkgs.callPackage ./pkgs/desec-dns {};
   acloud-dl = pkgs.callPackage ./pkgs/acloud-dl {};
 
   cntb-bin = pkgs.callPackage ./pkgs/cntb-bin {};
