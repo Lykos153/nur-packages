@@ -26,7 +26,7 @@ stdenv.mkDerivation rec {
 
   meta = with lib; {
     description = " List IOMMU Groups and the connected USB Devices";
-    homepage = https://gist.github.com/r15ch13/ba2d738985fce8990a4e9f32d07c6ada;
+    homepage = "https://gist.github.com/r15ch13/ba2d738985fce8990a4e9f32d07c6ada";
     platforms = platforms.all;
   };
 }

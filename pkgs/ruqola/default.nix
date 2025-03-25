@@ -43,7 +43,7 @@ stdenv.mkDerivation rec {
 
   meta = with lib; {
     description = "KDE client for Rocket Chat";
-    homepage = https://invent.kde.org/network/ruqola;
+    homepage = "https://invent.kde.org/network/ruqola";
     license = licenses.lgpl21Only;
     platforms = platforms.all;
   };

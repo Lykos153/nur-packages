@@ -41,7 +41,7 @@ stdenv.mkDerivation rec {
 
   meta = with lib; {
     description = "Timewarrior on-modify Hook for Taskwarrior";
-    homepage = https://github.com/GothenburgBitFactory/task-timewarrior-hook;
+    homepage = "https://github.com/GothenburgBitFactory/task-timewarrior-hook";
     license = licenses.mit;
     platforms = platforms.all;
   };
