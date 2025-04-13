@@ -11,7 +11,6 @@
   modules = import ./modules; # NixOS modules
   overlays = import ./overlays; # nixpkgs overlays
 
-  mum = pkgs.callPackage ./pkgs/mum {};
   keyboard_layout_optimizer = pkgs.callPackage ./pkgs/keyboard_layout_optimizer {};
   polybar-pulseaudio-control = pkgs.callPackage ./pkgs/polybar-pulseaudio-control {};
 
@@ -28,7 +27,6 @@
   toki = pkgs.callPackage ./pkgs/toki {};
   task-timewarrior-hook = pkgs.callPackage ./pkgs/task-timewarrior-hook {};
   garden = pkgs.callPackage ./pkgs/garden {};
-  openstack-rs = pkgs.callPackage ./pkgs/openstack-rs {};
   bugwarrior = pkgs.callPackage ./pkgs/bugwarrior {};
   acloud-dl = pkgs.callPackage ./pkgs/acloud-dl {};
 
